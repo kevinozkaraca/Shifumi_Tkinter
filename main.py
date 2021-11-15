@@ -2,7 +2,7 @@ import tkinter
 # Taille des éléments
 width_fenetre = "800"
 height_fenetre = "600"
-taille_images = "150"
+taille_images = "200"
 # Affichage de la fenetre
 fenetre = tkinter.Tk()
 fenetre.title("Shi-Fu-Mi")
@@ -22,9 +22,9 @@ fond_de_shifumi.place(x = 0, y = 0)
 boutonCiseaux = tkinter.Button(fenetre, image=image_ciseaux, bd=5, width=taille_images, height=taille_images)
 boutonFeuille = tkinter.Button(fenetre, image=image_feuille, bd=5, width=taille_images, height=taille_images)
 boutonPierre = tkinter.Button(fenetre, image=image_pierre, bd=5, width=taille_images, height=taille_images)
-boutonCiseaux.place(x=88, y=240)
-boutonPierre.place(x=324, y=240)
-boutonFeuille.place(x=561, y=240)
+boutonCiseaux.place(x=80, y=255)
+boutonPierre.place(x=300, y=255)
+boutonFeuille.place(x=520, y=255)
 
 # Mainloop
 fenetre.mainloop()
