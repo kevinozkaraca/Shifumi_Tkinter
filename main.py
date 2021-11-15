@@ -1,5 +1,6 @@
 import tkinter
 from typing import get_origin
+import random
 # Taille des éléments
 width_fenetre = "800"
 height_fenetre = "600"
@@ -12,10 +13,10 @@ fenetre.resizable(width=False, height=False)
 fenetre.configure(background="#A1D2E1")
 fenetre.iconphoto(False, tkinter.PhotoImage(file=r"imagesShifumi/icone.png"))
 # Images du Shi-Fu-Mi
-image_CPU =     [   tkinter.PhotoImage(file=r"imagesShifumi/CPU.PNG"),
-                    tkinter.PhotoImage(file=r"imagesShifumi/ciseauxCPU.png"),
+image_CPU =     [   tkinter.PhotoImage(file=r"imagesShifumi/ciseauxCPU.png"),
                     tkinter.PhotoImage(file=r"imagesShifumi/feuilleCPU.png"),
                     tkinter.PhotoImage(file=r"imagesShifumi/pierreCPU.png"),
+                    tkinter.PhotoImage(file=r"imagesShifumi/CPU.PNG"),
                     ]
 image_ciseaux = [   tkinter.PhotoImage(file=r"imagesShifumi/ciseauxCouleur.PNG"),
                     tkinter.PhotoImage(file=r"imagesShifumi/ciseauxLoose.png"),
@@ -34,7 +35,10 @@ image_pierre = [    tkinter.PhotoImage(file=r"imagesShifumi/pierreCouleur.PNG"),
                     ]
 image_de_fond =     tkinter.PhotoImage(file=r"imagesShifumi/Présentation.png")
 #Logique du jeu
+choixDuJoueur = -1
 def bouton0():
+    global choixDuJoueur
+    choixDuJoueur = 0
     print("Bouton 0 Actif")
     global boutonFeuille
     global boutonPierre
@@ -63,8 +67,11 @@ def bouton0():
     boutonCiseaux.place(x = 80, y = 255)
     boutonPierre.place(x = 300, y = 255)
     boutonFeuille.place(x = 520, y = 255)
+    choixCPUcompare()
 def bouton1():
-    print("Bouton 0 Actif")
+    global choixDuJoueur
+    choixDuJoueur = 1
+    print("Bouton 1 Actif")
     global boutonFeuille
     global boutonPierre
     global boutonCiseaux
@@ -92,8 +99,11 @@ def bouton1():
     boutonCiseaux.place(x = 80, y = 255)
     boutonPierre.place(x = 300, y = 255)
     boutonFeuille.place(x = 520, y = 255)
+    choixCPUcompare()
 def bouton2():
-    print("Bouton 0 Actif")
+    global choixDuJoueur
+    choixDuJoueur = 2
+    print("Bouton 2 Actif")
     global boutonFeuille
     global boutonPierre
     global boutonCiseaux
@@ -121,10 +131,38 @@ def bouton2():
     boutonCiseaux.place(x = 80, y = 255)
     boutonPierre.place(x = 300, y = 255)
     boutonFeuille.place(x = 520, y = 255)
+    choixCPUcompare()
+# Possibilités aléatoires
+def choixCPUcompare():
+    for i in range(1):
+        i = random.randint(0, 2)
+        print(i)
+    choixCPU = i
+    if choixDuJoueur == choixCPU :
+        image_CPUchoix = tkinter.Label( fenetre, image = image_CPU[choixDuJoueur]) 
+        image_CPUchoix.place(x = 630, y = 480)
+    elif choixDuJoueur == 0 & choixCPU == 1:
+        image_CPUchoix = tkinter.Label( fenetre, image = image_CPU[choixCPU]) 
+        image_CPUchoix.place(x = 630, y = 480)
+    elif choixDuJoueur == 0 & choixCPU == 2:
+        image_CPUchoix = tkinter.Label( fenetre, image = image_CPU[choixCPU]) 
+        image_CPUchoix.place(x = 630, y = 480)
+    elif choixDuJoueur == 1 & choixCPU == 0:
+        image_CPUchoix = tkinter.Label( fenetre, image = image_CPU[choixCPU]) 
+        image_CPUchoix.place(x = 630, y = 480)
+    elif choixDuJoueur == 1 & choixCPU == 2:
+        image_CPUchoix = tkinter.Label( fenetre, image = image_CPU[choixCPU]) 
+        image_CPUchoix.place(x = 630, y = 480)
+    elif choixDuJoueur == 2 & choixCPU == 0:
+        image_CPUchoix = tkinter.Label( fenetre, image = image_CPU[choixCPU]) 
+        image_CPUchoix.place(x = 630, y = 480)
+    elif choixDuJoueur == 2 & choixCPU == 1:
+        image_CPUchoix = tkinter.Label( fenetre, image = image_CPU[choixCPU]) 
+        image_CPUchoix.place(x = 630, y = 480)     
 # Boutons du Shi-Fu-Mi
 fond_de_shifumi = tkinter.Label( fenetre, image = image_de_fond) 
 fond_de_shifumi.place(x = 0, y = 0)
-image_CPUchoix = tkinter.Label( fenetre, image = image_CPU[0]) 
+image_CPUchoix = tkinter.Label( fenetre, image = image_CPU[3]) 
 image_CPUchoix.place(x = 630, y = 480)
 boutonCiseaux = tkinter.Button(fenetre, 
                                image=image_ciseaux[0], 
