@@ -45,7 +45,7 @@ Une fois le projet terminé j'ai converti le jeu en fichier executable, vous pou
 
 <br/>
 <p align="center">
-  <img align="center" width="60%" alt="ilustration du jeu Shi-Fu-Mi" src="imagesReadme/imageDuJeuGAGNE.png"/>
+  <img align="center" width="60%" alt="ilustration du jeu Shi-Fu-Mi" src="imagesReadme/imageDuJeuEXE.png"/>
 </p>
 <br/>
 
