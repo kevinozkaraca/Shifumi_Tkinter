@@ -16,6 +16,39 @@ Le chifoumi, est le jeu pierre-feuille-ciseaux, ce jeu est souvent utilisé comm
 </p>
 <br/>
 
+### L'interface graphique
+
+L'affichage se compose de trois boutons qui changent de couleurs en fonction du choix aléatoire de l'ordinateur.
+
+Perdu :
+<br/>
+<p align="center">
+  <img align="center" width="60%" alt="ilustration du jeu Shi-Fu-Mi" src="imagesReadme/imageDuJeuPERDU.png"/>
+</p>
+<br/>
+Egalité :
+<br/>
+<p align="center">
+  <img align="center" width="60%" alt="ilustration du jeu Shi-Fu-Mi" src="imagesReadme/imageDuJeuEGALITE.png"/>
+</p>
+<br/>
+Gagné :
+<br/>
+<p align="center">
+  <img align="center" width="60%" alt="ilustration du jeu Shi-Fu-Mi" src="imagesReadme/imageDuJeuGAGNE.png"/>
+</p>
+<br/>
+
+### L'interface graphique
+
+Une fois le projet terminé j'ai converti le jeu en fichier executable, vous pouvez le retrouver dans le fichier qui porte le nom "Projet converti en EXE"
+
+<br/>
+<p align="center">
+  <img align="center" width="60%" alt="ilustration du jeu Shi-Fu-Mi" src="imagesReadme/imageDuJeuGAGNE.png"/>
+</p>
+<br/>
+
 ### Mes reseaux sociaux : 
 
 <p align="center">
