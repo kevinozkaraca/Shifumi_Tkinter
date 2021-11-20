@@ -218,7 +218,7 @@ def choixCPUcompare():
                                        width=taille_images, 
                                        height=taille_images,
                                        command=bouton0
-                                       ù)
+                                       )
         boutonFeuille = tkinter.Button(fenetre, 
                                        image=image_feuille[0], 
                                        bd=5, 
@@ -282,7 +282,7 @@ boutonFeuille = tkinter.Button(fenetre,
                                image=image_feuille[0],
                                bd=5,
                                width=taille_images,
-                               height=taille_images
+                               height=taille_images,
                                command=bouton1
                                )
 boutonPierre = tkinter.Button(fenetre,

@@ -39,7 +39,7 @@ Gagné :
 </p>
 <br/>
 
-### L'interface graphique
+### La version .EXE
 
 Une fois le projet terminé j'ai converti le jeu en fichier executable, vous pouvez le retrouver dans le fichier qui porte le nom "Projet converti en EXE"
 
