@@ -94,12 +94,27 @@ def choixCPUcompare():
         boutonPierre.place(x=300, y=255)
         boutonFeuille.place(x=520, y=255)
     if choixCPU == 0 and choixDuJoueur == 1:
-        boutonCiseaux = tkinter.Button(
-            fenetre, image=image_ciseaux[0], bd=5, width=taille_images, height=taille_images, command=bouton0)
-        boutonFeuille = tkinter.Button(
-            fenetre, image=image_feuille[1], bd=5, width=taille_images, height=taille_images, command=bouton1)
-        boutonPierre = tkinter.Button(
-            fenetre, image=image_pierre[0], bd=5, width=taille_images, height=taille_images, command=bouton2)
+        boutonCiseaux = tkinter.Button(fenetre, 
+                                       image=image_ciseaux[0], 
+                                       bd=5, 
+                                       width=taille_images, 
+                                       height=taille_images, 
+                                       command=bouton0
+                                       )
+        boutonFeuille = tkinter.Button(fenetre, 
+                                       image=image_feuille[1],
+                                       bd=5, 
+                                       width=taille_images, 
+                                       height=taille_images, 
+                                       command=bouton1
+                                       )
+        boutonPierre = tkinter.Button(fenetre, 
+                                      image=image_pierre[0], 
+                                      bd=5, 
+                                      width=taille_images,
+                                      height=taille_images, 
+                                      command=bouton2
+                                      )
         boutonCiseaux.place(x=80, y=255)
         boutonPierre.place(x=300, y=255)
         boutonFeuille.place(x=520, y=255)
