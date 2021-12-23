@@ -6,7 +6,7 @@
 </p>
 <br/>
 
-### Qu'est ce que Shi-Fu-Mi
+### Qu'est ce que Shi-Fu-Mi ?
 
 Le chifoumi, est le jeu pierre-feuille-ciseaux, ce jeu est souvent utilisé comme projet de formation. Certains proposent des tutoriels en console pour mettre en pratique la logique du jeu. J'ai voulu ici présenter le jeu avec une interface graphique que j'ai réalisé avec powerpoint. 
 
